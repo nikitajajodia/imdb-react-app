@@ -1,9 +1,9 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "imdb-react-app",
   "version": "1.0.0",
   "description": "Boilerplate to setup your react-redux app with eslint lint and jest",
   "author": "Nikita-Jajodia",
-  "repository": "https://github.com/nikitajajodia/react-redux-boilerplate.git",
+  "repository": "https://github.com/nikitajajodia/imdb-react-app.git",
   "scripts": {
     "dev": "webpack-dev-server --historyApiFallback true --port 8888 --content-base build/",
     "test": "jest",
