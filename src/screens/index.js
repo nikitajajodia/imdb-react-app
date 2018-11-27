@@ -1,7 +1,11 @@
 import HomePage from './HomePage';
-import TestPage from './TestPage';
+import LoginPage from './LoginPage';
+import WatchList from './WatchListPage';
+import TopMovies from './TopMoviesPage';
 
 export {
   HomePage,
-  TestPage,
+  LoginPage,
+  WatchList,
+  TopMovies,
 };

@@ -1,9 +1,7 @@
 import axios from 'axios';
 import Config from '../config';
 
-const {
-  baseUri,
-} = Config;
+const baseURI = `https://api.themoviedb.org/3/`;
 
 const get = (url, params, headers) => new Promise((resolve) => {
   axios.get(baseUri + url, { params, headers })

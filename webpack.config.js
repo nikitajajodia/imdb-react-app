@@ -31,7 +31,34 @@ module.exports = {
 		      	test: /\.js$/,
 		      	exclude: /node_modules/,
 		      	use: ['babel-loader', 'eslint-loader']
-		    	}
+		    },
+		    {
+		        test: /\.css$/,
+		        use: ['style-loader', 'css-loader']
+		    },
+		    {
+		       	test: /\.less$/,
+			    use: [{
+			        loader: 'style-loader'
+			      }, {
+			        loader: 'css-loader', options: {
+			          	sourceMap: true
+			        }
+			      }, {
+			        loader: 'less-loader', options: {
+			          	sourceMap: true
+			        }
+			    }]
+		    },
+		    {
+			  test: /\.(jpg|png)$/,
+			  use: {
+			    loader: "file-loader",
+			    options: {
+			      name: "[path][name].[hash].[ext]",
+			    },
+			  },
+			},
 	    ]
 	 },
 	resolve: {

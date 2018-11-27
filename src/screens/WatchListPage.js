@@ -1,15 +1,12 @@
 import React from 'react';
-import {
-  HomePageContainer,
-} from '../containers';
 
-export default function HomePage() {
+export default function WatchList() {
   return (
     <div className="wrapper">
       <section className="login-box">
         <div className="login-box-body">
           <h1 className="text-center">
-            <HomePageContainer />
+            HomePage
           </h1>
         </div>
       </section>

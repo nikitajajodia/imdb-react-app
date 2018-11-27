@@ -13,8 +13,12 @@ import {
 import {
   Provider,
 } from 'react-redux';
-import { HomePage } from './screens';
-
+import {
+  HomePage,
+  LoginPage,
+  WatchList,
+  TopMovies,
+} from './screens';
 
 import configureStore from './store';
 
@@ -25,6 +29,9 @@ const App = () => (
     <BrowserRouter history={browserHistory}>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={LoginPage} />
+        <Route exact path="/watch-list" component={WatchList} />
+        <Route exact path="/top-movies" component={TopMovies} />
       </Switch>
     </BrowserRouter>
   </Provider>
